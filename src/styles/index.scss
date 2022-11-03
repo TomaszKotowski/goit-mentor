@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url("./reset.scss");
+@import url("./normalize.scss");
+
+@import url("./hero.scss");
+@import url("./footer.scss");
+@import url("./services.scss");
+@import url("./commons.scss");
+@import url("./team.scss");
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.app {
+  // width: 1200px;
+  margin: 0 auto;
+}

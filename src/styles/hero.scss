@@ -1,0 +1,90 @@
+.header {
+  height: 1000px;
+  padding-top: 14px;
+
+  background-image: linear-gradient(0deg, #fbe389 0%, #f48b82 100%);
+  color: #ffffff;
+
+  &__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 902px;
+    margin-bottom: 172px;
+  }
+
+  &__learn-more-button {
+    color: #ffffff;
+    width: 160px;
+    height: 40px;
+
+    background: rgba(0, 0, 0, 0.0001);
+    border: 3px solid #ffffff;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 360px;
+
+  &__logo {
+    flex: 1;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__link {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      color: #fce38a;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 1px;
+        top: 26px;
+        color: #fce38a;
+
+        background: #fce38a;
+      }
+    }
+
+    &--icon {
+      width: 16px;
+      height: 16px;
+
+      svg {
+        path {
+          stroke: #ffffff;
+        }
+      }
+
+      &:hover {
+        svg {
+          path {
+            stroke: #fbe389;
+          }
+        }
+      }
+    }
+  }
+}

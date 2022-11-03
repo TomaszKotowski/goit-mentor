@@ -12,6 +12,9 @@ yarn-error.log*
 pnpm-debug.log*
 
 
+# parcel
+.parcel-cache
+
 # environment variables
 .env
 .env.production

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.scss" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <!-- nav -->
+        <nav class="nav">
+          <!-- logo -->
+          <div class="nav__logo">MoGO</div>
+          <div class="nav__links">
+            <a class="nav__link" href="#about">About</a>
+            <a class="nav__link" href="#service">Service</a>
+            <a class="nav__link">Work</a>
+            <a class="nav__link">Blog</a>
+            <a class="nav__link">Contact</a>
+            <a class="nav__link nav__link--icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin=" round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </a>
+            <span class="nav__link nav__link--icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </span>
+          </div>
+        </nav>
+        <div class="header__hero">
+          <h1 class="header__title">WELCOME TO MOGO</h1>
+          <button type="button" class="header__learn-more-button">
+            Learn More
+          </button>
+        </div>
+      </header>
+
+      <!-- service -->
+      <section id="service" class="section">
+        <h3 class="section-header">Amazing Services</h3>
+        <span class="section-header__underline"></span>
+
+        <div class="services">
+          <article class="service">
+            <img
+              class="service__icon"
+              src="./icons/clock.svg"
+              alt="clock-icon"
+            />
+            <div class="service__content">
+              <p class="service__content__title">Photography</p>
+              <p class="service__content__info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis fugit dolore fuga suscipit dicta eligendi nobis saepe
+                vero!
+              </p>
+            </div>
+          </article>
+          <article class="service">
+            <img
+              class="service__icon"
+              src="./icons/graph.svg"
+              alt="graph-icon"
+            />
+            <div class="service__content">
+              <p class="service__content__title">Web design</p>
+              <p class="service__content__info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis fugit dolore fuga suscipit dicta eligendi nobis saepe
+                vero!
+              </p>
+            </div>
+          </article>
+          <article class="service">
+            <img
+              class="service__icon"
+              src="./icons/monitor.svg"
+              alt="monitor-icon"
+            />
+            <div class="service__content">
+              <p class="service__content__title">Creativity</p>
+              <p class="service__content__info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis fugit dolore fuga suscipit dicta eligendi nobis saepe
+                vero!
+              </p>
+            </div>
+          </article>
+          <article class="service">
+            <img class="service__icon" src="./icons/book.svg" alt="book-icon" />
+            <div class="service__content">
+              <p class="service__content__title">seo</p>
+              <p class="service__content__info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis fugit dolore fuga suscipit dicta eligendi nobis saepe
+                vero!
+              </p>
+            </div>
+          </article>
+          <article class="service">
+            <img
+              class="service__icon"
+              src="./icons/home.svg"
+              alt="alarm-clock-icon"
+            />
+            <div class="service__content">
+              <p class="service__content__title">CSS/HTML</p>
+              <p class="service__content__info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis fugit dolore fuga suscipit dicta eligendi nobis saepe
+                vero!
+              </p>
+            </div>
+          </article>
+          <article class="service">
+            <img
+              class="service__icon"
+              src="./icons/qr-code.svg"
+              alt="qr-code-icon"
+            />
+            <div class="service__content">
+              <p class="service__content__title">Digital</p>
+              <p class="service__content__info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis fugit dolore fuga suscipit dicta eligendi nobis saepe
+                vero!
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- team -->
+      <section id="about" class="about section">
+        <h3 class="section-header">Meet out team</h3>
+        <span class="section-header__underline"></span>
+        <div class="team">
+          <div class="team__member">
+            <div class="team__member__image__wrapper">
+              <img
+                class="team__member__image"
+                src="./assests/christopher-campbell.png"
+                alt="christopher-campbell"
+              />
+              <div class="team__member__image__social-media">
+                <button class="social-media social-media--red">
+                  <img src="./icons/facebook.svg" alt="facebook-icon" />
+                </button>
+                <button class="social-media">
+                  <img src="./icons/twitter.svg" alt="twitter-icon" />
+                </button>
+                <button class="social-media">
+                  <img src="./icons/pinterest.svg" alt="pinterest-icon" />
+                </button>
+                <button class="social-media">
+                  <img src="./icons/instagram.svg" alt="instagram-icon" />
+                </button>
+              </div>
+            </div>
+
+            <p class="team__member__name">Matthew Dix</p>
+            <p class="team__member__position">Graphic Designer</p>
+          </div>
+          <div class="team__member">
+            <div class="team__member__image__wrapper">
+              <img
+                class="team__member__image"
+                src="./assests/christopher-campbell.png"
+                alt="christopher-campbell"
+              />
+              <div class="team__member__image__social-media">
+                <button class="social-media social-media--red">
+                  <img src="./icons/facebook.svg" alt="facebook-icon" />
+                </button>
+                <button class="social-media">
+                  <img src="./icons/twitter.svg" alt="twitter-icon" />
+                </button>
+                <button class="social-media">
+                  <img src="./icons/pinterest.svg" alt="pinterest-icon" />
+                </button>
+                <button class="social-media">
+                  <img src="./icons/instagram.svg" alt="instagram-icon" />
+                </button>
+              </div>
+            </div>
+
+            <p class="team__member__name">Christopher Campbell</p>
+            <p class="team__member__position">Branding/UX design</p>
+          </div>
+          <div class="team__member">
+            <div class="team__member__image__wrapper">
+              <img
+                class="team__member__image"
+                src="./assests/michael-fertig.png"
+                alt="michael-fertig"
+              />
+              <div class="team__member__image__social-media">
+                <button class="social-media social-media--red">
+                  <img src="./icons/facebook.svg" alt="facebook-icon" />
+                </button>
+                <button class="social-media">
+                  <img src="./icons/twitter.svg" alt="twitter-icon" />
+                </button>
+                <button class="social-media">
+                  <img src="./icons/pinterest.svg" alt="pinterest-icon" />
+                </button>
+                <button class="social-media">
+                  <img src="./icons/instagram.svg" alt="instagram-icon" />
+                </button>
+              </div>
+            </div>
+
+            <p class="team__member__name">Micheal Fertig</p>
+            <p class="team__member__position">Developer</p>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="footer">
+        <p class="footer__author">
+          © 2016 MoGo free PSD template by
+          <span class="footer__author__company">Laaqiq</span>
+        </p>
+        <div class="footer__newsletter">
+          <input class="newsletter__email" type="text" />
+          <button class="newsletter__submit" type="submit">SUBSCRIBE</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

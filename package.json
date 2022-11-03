@@ -8,6 +8,7 @@
     "url": "https://github.com/TomaszKotowski/goit-mentor"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
@@ -16,6 +17,7 @@
   "author": "Tomasz Kotowski",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0"
   }
 }

@@ -1,0 +1,44 @@
+.footer {
+  width: 1200px;
+  height: 61px;
+  margin: 0 auto;
+
+  border-top: 1px solid #e5e5e5;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__author {
+    font-size: 14px;
+    color: #333333;
+
+    &__company {
+      color: #f38181;
+    }
+  }
+
+  &__newsletter {
+    display: flex;
+    height: 40px;
+
+    .newsletter {
+      &__email {
+        width: 230px;
+        height: 40px;
+
+        background: #ffffff;
+        border: 1px solid #e7e7e7;
+      }
+
+      &__submit {
+        width: 150px;
+        height: 40px;
+        color: white;
+        border: none;
+
+        background: #95e1d3;
+      }
+    }
+  }
+}
