@@ -23,8 +23,11 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  BUILD_PATH: "." # default value when not using subfolders
+  # BUILD_PATH: subfolder
+
 jobs:
-  # Build job
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -60,13 +63,13 @@ jobs:
         with:
           path: ${{ env.BUILD_PATH }}/dist
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
