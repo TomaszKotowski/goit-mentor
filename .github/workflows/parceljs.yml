@@ -61,11 +61,7 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: ${{ env.BUILD_PATH }}/www/
-      - uses: actions/upload-artifact@v1
-        with:
-          name: upload artifacts
-          path: ${{ env.BUILD_PATH }}/www/
+          path: ${{ env.BUILD_PATH }}/dist
 
   deploy:
     environment:
