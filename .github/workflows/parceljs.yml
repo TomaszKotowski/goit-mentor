@@ -62,6 +62,9 @@ jobs:
       - uses: actions/upload-pages-artifact@v1
         with:
           path: ${{ env.BUILD_PATH }}/www/
+      - uses: actions/upload-artifact@v1
+        with:
+          path: ${{ env.BUILD_PATH }}/www/
 
   deploy:
     environment:
