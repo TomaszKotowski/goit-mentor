@@ -64,6 +64,7 @@ jobs:
           path: ${{ env.BUILD_PATH }}/www/
       - uses: actions/upload-artifact@v1
         with:
+          name: upload artifacts
           path: ${{ env.BUILD_PATH }}/www/
 
   deploy:
